@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ماجيك جروب | أدوات صحية</title>
+  <style>
+    :root{
+      --blue:#0b4da2;
+      --orange:#f28c28;
+      --white:#ffffff;
+      --gray:#f5f5f5;
+    }
+    body{
+      margin:0;
+      font-family: 'Cairo', Arial, sans-serif;
+      background:var(--white);
+      color:#222;
+    }
+    header{
+      background:var(--white);
+      border-bottom:3px solid var(--blue);
+      padding:15px 40px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    header img{height:70px;}
+    nav a{
+      margin:0 10px;
+      text-decoration:none;
+      color:var(--blue);
+      font-weight:600;
+    }
+    nav a:hover{color:var(--orange);}
+
+    .hero{
+      background:linear-gradient(135deg, var(--blue), #083b7a);
+      color:var(--white);
+      padding:70px 20px;
+      text-align:center;
+    }
+    .hero h1{font-size:40px;margin-bottom:10px;}
+    .hero p{font-size:18px;max-width:800px;margin:auto;}
+
+    .section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+    .section h2{
+      color:var(--blue);
+      margin-bottom:20px;
+      position:relative;
+    }
+    .section h2::after{
+      content:"";
+      width:60px;
+      height:4px;
+      background:var(--orange);
+      position:absolute;
+      bottom:-8px;
+      right:0;
+    }
+
+    .about p{line-height:1.9;}
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      border:1px solid #ddd;
+      padding:25px;
+      text-align:center;
+      border-radius:10px;
+      background:#fff;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card h3{color:var(--blue);}
+
+    footer{
+      background:var(--blue);
+      color:#fff;
+      text-align:center;
+      padding:25px 15px;
+      margin-top:40px;
+    }
+    footer span{color:var(--orange);}
+
+    @media(max-width:768px){
+      header{flex-direction:column;gap:10px;}
+      .hero h1{font-size:30px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- ضع ملف اللوجو باسم logo.png داخل نفس المجلد -->
+  <img src="logo.png" alt="Magic Group Logo" />
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#products">منتجاتنا</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>ماجيك جروب – Magic Group</h1>
+  <p>متخصصون في تصنيع الأدوات الصحية ومستلزمات السباكة بجودة عالية وسعر تنافسي</p>
+</section>
+
+<section id="about" class="section about">
+  <h2>من نحن</h2>
+  <p>
+    تأسست شركة ماجيك جروب عام 2020، امتدادًا لخبرة عملية تزيد عن 20 عامًا في مجال الصناعات الهندسية ومستلزمات السباكة.
+    نحن شركة متخصصة في صناعة الأفـيز، أطقم المسامير، وصلات المياه المرنة، والخلاطات، مع الالتزام بتقديم منتجات تجمع بين الجودة العالية، المتانة، والسعر التنافسي.
+  </p>
+  <p>
+    نعمل في ماجيك جروب على تطوير منتجاتنا بشكل مستمر لمواكبة احتياجات السوق المصري ومتطلبات العملاء، مع الاعتماد على خامات مختارة بعناية وتقنيات تصنيع حديثة تضمن أعلى مستويات الأداء والسلامة.
+  </p>
+  <p>
+    استطاعت ماجيك جروب أن تبني ثقة عملائها في مختلف القطاعات، من خلال تقديم حلول عملية وموثوقة تُستخدم في المشروعات السكنية والتجارية، مع الالتزام بالمواصفات القياسية ومعايير الجودة.
+  </p>
+  <p>
+    نطمح دائمًا إلى توسيع نطاق أعمالنا داخل السوق المحلي وخارجه، وأن نكون شريكًا موثوقًا في كل ما يخص مستلزمات التوصيل والتركيب، واضعين رضا العميل والجودة المستدامة في مقدمة أولوياتنا.
+  </p>
+</section>
+
+<section id="products" class="section">
+  <h2>منتجاتنا</h2>
+  <div class="products">
+    <div class="card"><h3>الأفيز</h3><p>خامات قوية وتحمل عالي</p></div>
+    <div class="card"><h3>أطقم المسامير</h3><p>دقة وجودة في التصنيع</p></div>
+    <div class="card"><h3>وصلات المياه المرنة</h3><p>أمان وعمر افتراضي طويل</p></div>
+    <div class="card"><h3>الخلاطات</h3><p>تصميم عملي وجودة موثوقة</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>اتصل بنا</h2>
+  <p>📞 هاتف: يتم إضافته لاحقًا</p>
+  <p>📧 بريد إلكتروني: info@magicgroup.com</p>
+  <p>📍 العنوان: جمهورية مصر العربية</p>
+</section>
+
+<footer>
+  © 2025 <span>Magic Group</span> – جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
